@@ -1,0 +1,271 @@
+body{
+	background-image: url('assets\img\volleyball.jpg');
+	background-color: #7EBDC3;
+	font-family: 微軟正黑體;
+}
+header {
+	height:300px;
+	background-color: 	#C6DEA6;
+	width:70%;
+	margin:0 auto;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.selftext
+{
+	font-family: cursive;
+	font-size: 20px;
+	color:#7A6263;
+	font-weight: bold;
+}
+
+.me{
+	width: 300px;
+	height: 260px;
+	border-radius: 50%;	
+	float: left;
+	margin-top: 70px;
+	margin-left: 50px;
+}
+.content{
+	width: 70%;
+	margin:0 auto;
+	background-color: 	#DFF2D8;
+	height: 1600px;
+	padding: 20px;
+}
+.L{
+	width:45%;
+	float: left;
+}
+.R{
+	width:50%;
+	float: right;
+	margin-right: 30px;
+	font-size: 18px;
+
+}
+.L1{
+	width:30%;
+	float: left;
+}
+.R1{
+	width:40%;
+	float:left;
+	font-size: 18px;
+	color: black;
+	font-family:cursive;
+}
+.RR{
+	width:30%;
+	float: left;
+	color: black;
+}
+#fb{
+	width:15%;
+	margin-left: 10px;
+	margin-top: 5px;
+	vertical-align: middle;
+
+}
+.skillbar{
+  width: 90%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+.bar{
+  
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.bar::before{
+  content:  attr(data-skill);
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.Java::before{
+  width: calc(35% - 5%);
+  background-color: #B9B9FF;
+}
+.bar.Python::before{
+  width: calc(35% - 5%);
+  background-color: #97CBFF;
+}
+.bar.CSharp::before{
+  width: calc(40% - 5%);
+  background-color: #BBFFFF;
+}
+.bar.CSS::before{
+  width: calc(50% - 5%);
+  background-color: #ADFEDC;
+}
+.bar.HTML::before{
+  width: calc(65% - 5%);
+  background-color: #A6FFA6;
+}
+   .button {
+  border-radius: 8px;
+  background-color: #B68;
+  border:none;
+  color: #DDD;
+  text-align: center;
+  font-size: 22px;
+  padding: 13px;
+  width: 150px;
+  transition: all 0.5s;
+  margin: 5px;
+  
+}
+.button1{
+	text-decoration: none;
+}
+.R .img1{
+	width: 90px;
+	border-radius:50%;
+	border:3px solid #555;
+	vertical-align: middle;
+}
+
+
+.L2{
+	width:20%;
+	float: left;
+}
+.R2{
+	width:20%;
+	float: right;
+}
+.R .img2{
+	width: 100%;
+	vertical-align: middle;
+}
+.R .p1{
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+}
+footer{
+	width: 70%;
+	margin:0 auto;
+	background-color: #1D6A96;
+	padding: 20px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bolder;
+}
+.flip-box {
+  background-color: transparent;
+  width: 660px;
+  height: 350px;
+  border: 1px solid #D1DDDB;
+  perspective: 1000px; 
+}
+
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+
+.flip-box-front {
+  background-color: #111;
+  color: black;
+
+}
+
+
+.flip-box-back {
+  background-color: #1D6A96;
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 24px;
+  font-weight: bold;
+}
+.course {
+		margin: 30px 0px;
+	}
+	.course img {
+		border: solid #900 1px;
+		opacity: 0.8;
+		box-shadow: 10px 10px 8px #888888;
+		vertical-align: bottom;
+		width: 240px;
+		height: 160px;
+	}
+	.course img:hover {
+		opacity: 1;	
+	}
+	.course span {
+		margin-left:20px;
+		font-size: 16px;	
+	}
+	.course button {
+		background-color:#E0FCAD;
+		border: solid 1px #666;
+		border-radius: 50%;
+
+	}
+	.course button:hover {
+		background-color:#9C0;
+		border: solid 1px #666;
+	}
+	.L1 div{
+		margin-top: -50px;
+	}
+
+.TB
+{
+	width: 300px;
+}
+
+	

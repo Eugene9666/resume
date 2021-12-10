@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume</title>
+		<link rel="stylesheet" type="text/css" href="assets\css\css.css">
+		<script>
+		function showhide(id)
+		{
+		var div = document.getElementById(id);
+		if (div.style.display !== "none") {
+		div.style.display = "none";
+		}
+		else {
+		div.style.display = "block";
+		}
+		}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class=L1>
+			<div></div>
+				<img class=me src="assets\img\頭貼.jpg">
+			</div>
+			<div class=R1>
+				<h2>個人簡介</h2><br>
+				<p>姓名:王之軍</p>
+				<p>學校:中原大學資管系</p>
+				<p>生日:2002/06/21</p>
+				<p>Email:s22609666s@gmail.com</p>
+			</div>
+			<div class=RR>
+				<p>FB:<a href="https://www.facebook.com/profile.php?id=100000821196066" target="_blank" title="fb" ><img id="fb" src="assets\img\fb.png" ></a></p>
+				<p>IG:<a href="https://www.instagram.com/junnn06.21/" target="_blank" title="ig" ><img id="fb" src="assets\img\ig.png" ></a></p>
+				<p>Em:<a href="mailto:s22609666s@gmail.com" target="_blank" title="Email" ><img id="em" src="assets/img/—Pngtree—mail icon_4723399.png" width="70px"></p></a></p>
+				<p class="selftext">"努力成為自己想要的模樣"</p>
+			</div>
+		</header>
+		<div class="content">
+			<div class="L">
+				<div class="skillbar">
+					<h1>Skill Set</h1>
+					
+					<div class="bar Java" data-skill="Java"> 35%</div>
+					<div class="bar Python" data-skill="Python"> 35%</div>
+					<div class="bar CSharp" data-skill="C#"> 40%</div>
+					<div class="bar CSS" data-skill="CSS"> 50%</div>
+					<div class="bar HTML" data-skill="HTML"> 65%</div>
+				</div><br>
+				<div>
+					
+					<h1>工作經歷</h1>
+					<div><a href="https://greattree.com.tw/"><img id="bigtree" src="assets\img\大樹藥局.png"></a>大樹藥局物流</div><br>
+					<div><img id="TB" src="assets\img\12087997_725208967623417_2163248756272646383_n.png" class="TB">ThinkingBar思考吧</div>
+					
+
+				</div>
+			</div>
+		<div class="R">
+			<h1>課程專案</h1>
+			<div class="course">
+				<img src="assets\img\honeycake.jpg" onclick="showhide('newpost1')" /><span class="T">大一企業概論 | 微熱山丘x蜜蜂糖脆蛋糕</span>...<button onclick="showhide('newpost1')">點擊圖片</button>
+			</div>
+			<div id="newpost1" style="display:none">
+				<p>選用沁甜的純真蜂蜜以健康飼養的鮮力蛋、日本麵粉、蔗糖製作而成樸實的配方，用時間與慢火烘焙出酥脆的口感愛心，讓溫柔的糕點照亮更多希望。蜜豐糖脆蛋糕的部分所得，將用於需要幫助的孩子。</p>
+			</div>
+			<div class="course">
+				<img src="assets\img\期中專題圖片.jpg" onclick="showhide('newpost2')" /><span class="T">大二多媒體  |  期中專案</span>...<button onclick="showhide('newpost2')">點擊圖片</button>
+			</div>
+			<div id="newpost2" style="display:none">
+				<p>我們這組的期中專案是介紹中原大學體育館，是我第一次的專案網頁製作，過程有點艱辛困難，但我和組員們都挺過來了。
+				</p>
+			</div>
+				<div>
+					<h1>社團活動</h1>
+					<p class=p1>中原大學資管男排</p>
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<img src="assets\img\CYIMVB.jpg" alt="Volleyball" style="width:660px;height: 350px ">
+							</div>
+							<div class="flip-box-back">
+								<h2>中原資管男排</h2>
+								<p>CYIM Volleyball Team</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<p class=p1>中原大學一般組</p>
+				<div class="flip-box">
+					<div class="flip-box-inner">
+						<div class="flip-box-front">
+							<img src="assets\img\CYCUVB.jpg" alt="Volleyball" style="width:660px;height: 350px ">
+						</div>
+						<div class="flip-box-back">
+							<h2>中原大學一般組</h2>
+							<p>CYCU Volleyball Team</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>&copy; 2021 By 王之軍</div>
+	</footer>
+</body>
+</html>
